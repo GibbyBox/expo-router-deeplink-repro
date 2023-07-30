@@ -5,20 +5,7 @@ The expo router package was updated to the latest v1 version and expo doctor iss
 
 ## Steps to reproduce
 
-Run the following command in terminal while the project is running.
-
-```
-npx uri-scheme open exp://127.0.0.1:19000/--/material-top-tabs/second --ios
-```
-
-## Checklist
-
-### Expo Go
-
-- [x] Deep linking when app is closed works
-- [x] Deep linking when app is in background works
-
-### Dev Client
-
-- [ ] Deep linking when app is closed works
-- [ ] Deep linking when app is in background works
+1. Start the app `yarn start` / `npm start` / `npx expo start`
+1. Open up expo in ios simulator and leave it in the foreground or in the background
+1. Run either as appropriate for the os
+  * `npx uri-scheme open exp://127.0.0.1:19000/--/material-top-tabs/second --ios`

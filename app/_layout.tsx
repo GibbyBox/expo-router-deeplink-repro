@@ -1,5 +1,10 @@
 import { Tabs } from "expo-router";
 import Head from "expo-router/head";
+
+export const unstable_settings = {
+	initialRouteName: '/index',
+};
+
 export default function Layout() {
   return (
     <>
