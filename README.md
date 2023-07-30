@@ -1,24 +1,24 @@
-# Expo Router Layouts Example
+# Deep Linking into Background App Repro
 
-Demonstrates using custom layouts with [`expo-router`](https://expo.github.io/router).
+Repro is using [Evan Bacon's Router Layouts example](https://github.com/EvanBacon/expo-router-layouts-example).
+The expo router package was updated to the latest v1 version and expo doctor issues were resolved.
 
-## 📝 Notes
+## Steps to reproduce
 
-- [Expo Router: Docs](https://expo.github.io/router)
-- [Expo Router: Repo](https://github.com/expo/router)
+Run the following command in terminal while the project is running.
 
+```
+npx uri-scheme open exp://127.0.0.1:19000/--/material-top-tabs/second --ios
+```
 
-https://user-images.githubusercontent.com/9664363/235320491-0a39090b-f6d7-46d6-b8d0-97eedc4a8d16.mp4
+## Checklist
 
+### Expo Go
 
+- [x] Deep linking when app is closed works
+- [x] Deep linking when app is in background works
 
-https://user-images.githubusercontent.com/9664363/235320539-581bec87-a3af-4055-9b45-c81d9588a5b9.mp4
+### Dev Client
 
-
-
-https://user-images.githubusercontent.com/9664363/235320545-e99a7201-229b-4446-8051-0a6f488957c3.mp4
-
-
-
-https://user-images.githubusercontent.com/9664363/235320559-763fcbc5-8013-4edc-8f8e-ecdc6b77c581.mp4
-
+- [ ] Deep linking when app is closed works
+- [ ] Deep linking when app is in background works
